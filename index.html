@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/58313b35ab.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="container" id="main-container">
+        <!-- navigation bar -->
+        <nav class="navbar">
+            <img class="logo-icon" src="./images/image1.jpg" alt="logo">
+            <ul>
+                <li class="nav-menu-list"><a href="#home" class="nav-menu-list-content">HOME</a></li>
+                <li class="nav-menu-list"><a href="#about" class="nav-menu-list-content">ABOUT</a></li>
+                <li class="nav-menu-list"><a href="#skills" class="nav-menu-list-content">SKILLS</a></li>
+                <li class="nav-menu-list"><a href="" class="nav-menu-list-content">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="home-title">
+                <h1 class="home-title-h1">
+                    i'm Wednesday <span id="home-title-end">Adams</span>
+                </h1>
+                <p class="home-title-discription">
+                    This is my official portfolio website to discribe all <br>Details and work experience in web
+                    development.
+                </p>
+                <a href="./images/download.jpg" class="title-link" download>DOWNLOAD CV</a>
+            </div>
+            <div class="home-images">
+                <!-- back shape -->
+                <img src="./images/shadow.png" id="shape" alt="backshape" class="imageGroup">
+                <img src="./images/image3.png" id="girl" alt="girl-shape" class="imageGroup">
+            </div>
+        </section>
+        <!-- starting about section -->
+        <section id="about">
+            <div class="about-head">
+                <h2>ABOUT ME</h2>
+                <span>Introduction</span>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="./images/image2.jpg" alt="about">
+                </div>
+                <div class="about-details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt necessitatibus molestias
+                        laborum mollitia minima pariatur deleniti voluptate, eligendi obcaecati autem, quaerat excepturi
+                        dolorum, molestiae quae veniam sit aspernatur culpa.</p>
+                    <div class="information">
+                        <div class="info">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Wednesday Adams</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>93547534875</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>wednesdayadams.gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="about-head">
+                <h2>Skills</h2>
+                <span>My skills</span>
+            </div>
+            <!-- skill section body contetnt -->
+            <div class="skill-container">
+                <!-- for progress -->
+                <div class="progress-bar">
+                    <!-- skill html -->
+                    <div class="bar-container">
+                        <h1>HTML</h1>
+                        <span>95%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar html-bar"></div>
+                    </div>
+                    <!-- CSS -->
+                    <div class="bar-container">
+                        <h1>CSS</h1>
+                        <span>84%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar css-bar"></div>
+                    </div>
+                    <!-- react -->
+                    <div class="bar-container">
+                        <h1>REACT</h1>
+                        <span>90%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar react-bar"></div>
+                    </div>
+                    <!-- JS -->
+                    <div class="bar-container">
+                        <h1>JS</h1>
+                        <span>87%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar js-bar"></div>
+                    </div>
+                </div>
+                <!-- for image -->
+                <div class="skill-img">
+                    <img src="./images/image5.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="about-head">
+                <h2>Contact</h2>
+                <span>My Contact</span>
+            </div>
+            <!-- icon collection -->
+                <div class="icon-set">
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="icon"><a href="#home"><i class="fa-brands fa-github"></i></a></div>
+                    <div class="icon"><a href="#home"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="icon"><a href="#home"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div class="icon"><a href="#home"><i class="fa-brands fa-twitter"></i></a></div>
+                </div>
+        </section>
+        <footer>
+            <p style="text-align: center;font-weight:600;">All right researved &copy; My portfolio&reg; Wednesday adams</p>
+            <div class="up-arrow">
+                <a href=""><i class="fa-solid fa-arrow-up fa-2x"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

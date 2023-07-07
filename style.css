@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin-left: 50px;
+}
+.logo-icon{
+    width: 160px;
+}
+.nav-menu-list{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.nav-menu-list-content{
+    text-decoration: none;
+    font-weight:800;
+    color: black;
+}
+.nav-menu-list-content:hover{
+    color:brown ;
+}
+.home-title{
+    margin: 13% 0px 0px 8%;
+}
+.home-title-h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+#home-title-end{
+    color: orange;
+    font-size: 50px;
+    font-weight: bold;
+}
+.title-link{
+    background-color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    color: white;
+}
+.home-images{
+    position: absolute;
+    bottom: 0px;
+    width: 45%;
+    height: 80%;
+    right: 30px;
+}
+.imageGroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%); 
+    /* transilate to orginal position */
+    transition: bottom 1s, left 2s;
+}
+.home-images:hover #shape{
+    bottom:75px;
+
+}
+.home-images:hover #girl{
+    left:40%
+}
+#about{
+    margin:13% 8% 0px 8%;
+}
+.about-head{
+    text-align: center;
+}
+.about-head>h2{
+    font-size: 30px
+}
+.about-head>span{
+    font-size: 20px;
+    color: green;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.about-img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about-details{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+.information{
+    margin: 1rem 0 0 0;
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    
+}
+.info span{
+    margin-left: 1rem;
+}
+/* Starting skill section */
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 90%;
+    padding-left: 4rem;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar-container h1,span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: grey;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    background-color: orange;
+    width: 95%;
+}
+.css-bar{
+    background-color: orange;
+    width: 84%;
+}
+.react-bar{
+    background-color: orange;
+    width: 90%;
+}
+.js-bar{
+    background-color: orange;
+    width: 87%;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+.icon{
+    width:50px;
+    height: 50px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,orange,red);
+
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+/* To set custom animation we use key frames */
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(30deg);}
+    40%{transform: rotate(-30deg);}
+}
